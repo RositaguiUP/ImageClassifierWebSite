@@ -11,11 +11,6 @@ app.use(cors());
 
 // Endpoint to handle image upload
 app.route('/upload')
-  .get((req, res) => {
-    // Handle GET request for the '/upload' endpoint
-    // Return any necessary response or render a page
-    res.send('GET request to http://localhost:3001/upload');
-  })
   .post(upload.single('image'), (req, res) => {
     // Handle POST request for the '/upload' endpoint
     // Process the uploaded image and generate random data

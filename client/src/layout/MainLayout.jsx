@@ -27,8 +27,8 @@ const MainLayout = () => {
         <div>
           <h3>Realizado por:</h3>
           <p>Rosita Aguirre Plascencia | 0225352</p>
-          <p>Karla Carpinteyro</p>
-          <p>Carlos Garcia</p>
+          <p>Karla Yoali Carpinteyro González | 0224538</p>
+          <p>Carlos García Becerra | 0224453</p>
         </div>
       </Footer>
     </Layout>
