@@ -7,7 +7,7 @@ const { Dragger } = Upload;
 
 const Classificator = () => {
   const [uploadedImage, setUploadedImage] = useState(null);
-  const [graphData, setGraphData] = useState(d3.range(256));
+  const [graphData, setGraphData] = useState(d3.range(4));
   const [classification, setClassification] = useState('');
 
 
@@ -34,7 +34,7 @@ const Classificator = () => {
 
   const handleClearImage = () => {
     setUploadedImage(null);
-    setGraphData(d3.range(256)); // Reset graph data
+    setGraphData(d3.range(4)); // Reset graph data
     setClassification('');
   };
 
@@ -69,7 +69,7 @@ const Classificator = () => {
           </div>
           <svg width={300} height={300}>
             {graphData.map((value, index) => (
-              <rect key={index} x={index * 2.7} y={300 - value * 300} width={2.7} height={value * 300} fill="#36BFB1" />
+              <rect key={index} x={index * 80} y={300 - value * 300} width={80} height={value * 300} fill="#36BFB1" />
             ))}
           </svg>
         </Col>

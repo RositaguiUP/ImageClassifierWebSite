@@ -13,8 +13,8 @@ const Classifications = () => {
     const pandasImagesContext = require.context('./../imgs/pandas', false, /\.(png|jpe?g|svg)$/);
     const pandasImages = pandasImagesContext.keys().map(pandasImagesContext);
     
-    const graphsImagesContext = require.context('./../imgs/graphs', false, /\.(png|jpe?g|svg)$/);
-    const graphsImages = graphsImagesContext.keys().map(graphsImagesContext);
+    //const graphsImagesContext = require.context('./../imgs/graphs', false, /\.(png|jpe?g|svg)$/);
+    //const graphsImages = graphsImagesContext.keys().map(graphsImagesContext);
 
   return (
     <div>
@@ -29,10 +29,6 @@ const Classifications = () => {
                     </div>
                 ))}
                 </Carousel>
-                <Divider/>
-                <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                    <img src={graphsImages[0]} alt="Duck graph" style={{ width: '100%' }} />
-                </div>
             </Card>
             </Col>
             <Col span={8}>
@@ -44,10 +40,6 @@ const Classifications = () => {
                         </div>
                     ))}
                 </Carousel>
-                <Divider/>
-                <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                    <img src={graphsImages[0]} alt="Duck graph" style={{ width: '100%' }} />
-                </div>
             </Card>
             </Col>
             <Col span={8}>
@@ -59,10 +51,6 @@ const Classifications = () => {
                         </div>
                     ))}
                 </Carousel>
-                <Divider/>
-                <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                    <img src={graphsImages[0]} alt="Duck graph" style={{ width: '100%' }} />
-                </div>
             </Card>
             </Col>
         </Row>
